@@ -8,8 +8,6 @@ dict = {}
 
 
 
-
-
 def query():
 
 
@@ -17,7 +15,7 @@ def query():
 
  ## This is the JQL query . Substitue other queries if neccessary.
 
- query='project = BIDM AND status not in (Closed, done, Verified, "Production Monitoring") AND type in ("BIDM Projects Sub-Tasks", "BIDM Data Modeling Support", "BIDM Production Support", "BIDM Prod Support Sub-Tasks", "BIDM Prod Support Incident", "BIDM Prod Support Enhancement") ORDER BY assignee, key '
+ query=''  #Subsistue your query here Example: project = BIDM AND status not in (Closed, done, Verified, "Production Monitoring") ORDER BY assignee, key '
 
  i=0
  x=0
@@ -73,8 +71,6 @@ def query():
 
   print("Extract Successful ")
   x=x+100
-
-
 
 
 
